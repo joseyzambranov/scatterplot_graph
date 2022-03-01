@@ -57,10 +57,10 @@ let createStuff=(data)=>{
         .attr("fill",d=>d[2]===""?"#e0576e":"#fefbfb")
         .attr("r",circleRadius)
         .on("mouseover",(d,i)=>{
-            tooltip.classList.add("show");
-            tooltip.style.left = xScale(d[1])+20+"px";
-            tooltip.style.top = yScale(d[0])+10+"px";
-            tooltip.setAttribute("data-year",d[1]);
+            tooltip.classList.add("show")
+            tooltip.style.left = xScale(d[1])+20+"px"
+            tooltip.style.top = yScale(d[0])+10+"px"
+            tooltip.setAttribute("data-year",d[1])
 
             tooltip.innerHTML = createInnerHtmlToolyip(d)
         }).on("mouseout",()=>{
